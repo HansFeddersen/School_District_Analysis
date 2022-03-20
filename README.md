@@ -83,8 +83,12 @@ To get this result, we have to establish the bins, categorize them, calculate th
 ![This is an image](https://github.com/HansFeddersen/School_District_Analysis/blob/main/Resources/More/Scores_by_school_spending_DF.png)
 
 - **Scores by school size**
+In this category, there is no notable change:
+![This is an image](https://github.com/HansFeddersen/School_District_Analysis/blob/main/Resources/More/Scores_by_school_size.png)
 
 
 - **Scores by school type**
--
+There is also no notable change:
+![This is an image](https://github.com/HansFeddersen/School_District_Analysis/blob/main/Resources/More/Scores_by_school_type.png)
+
 
