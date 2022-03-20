@@ -16,13 +16,17 @@ Data Bootcamp Module 3: PyCitySchools with Pandas
 
 ## Results
 
-**How many votes were casted in this congretional election?**
+**Summary of the disctrict (and how is affected with the change of grades)**
 
-According to the results of the eletion, a total of 369,711 votes were casted.
+The comparison of the district summary, before and after the change of grades is as follows:
 
-The script to get this result is as follows (total votes started from 0):
+![This is an image](https://github.com/HansFeddersen/School_District_Analysis/blob/main/Resources/More/District%20summary.png)
 
-![This is an image](https://github.com/HansFeddersen/Election_Analysis/blob/main/Challenge/Resources/More/Total%20_number%20_of_votes.png)
+It is possible to see that the total amount of students and budget don't change, but the average scores on Math and Reading go down (as does the percent of students that passed).
+
+To obtain the district summary, it is necessary to create a new Data frame, which is done with the following code:
+
+![This is an image](https://github.com/HansFeddersen/School_District_Analysis/blob/main/Resources/More/District_summary_DF.png)
 
 **Breakdown of the number of votes and the percentage of votes for each county in the precint**
 
