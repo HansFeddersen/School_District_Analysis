@@ -1,5 +1,5 @@
 # School_District_Analysis
-Data Bootcamp Module 3: PyCitySchools with Pandas
+Data Bootcamp Module 4: PyCitySchools with Pandas
 ## Overview of Project
 
 ### The purpose of this project is to anlalyze the performance of a group of students and schools using Jupyter notebooks. At first, the results were obtained using the complete "students_complete.csv" and "schools_complete.csv" datasets, but after the first analysis some values of the student dataset were modified, as one grade of Thomas High School had invalid input (which changes the overall results of the analysis. By the end of this project, we are able to obtain and compare the following:
@@ -60,34 +60,31 @@ Get the new percentage of students that passed math in Thomas High School:
 
 ![This is an image](https://github.com/HansFeddersen/School_District_Analysis/blob/main/Resources/More/math_replace_9th.png)
 
-The county with the largest number of votes was Denver. There were 306,055 casted votes in Denver (82,8% of the total) and of those votes 239,282 were fo candidate Diana DeGette (72.8%), 57,188 were for candidate Charles Casper Stockham (18,7%) and 9,585 were for candidate Raymon Anthony Doane (3.1%).
+**How does replacing the ninth-grade scores affect the following:**
 
-The script to get this result is as follows:
+- **Math and reading scores by grade**
+The only scores that should change are the ones of the 9th grade of Thomas High School, the performance of the other schools is not affected by replacing the grades.
 
-![This is an image](https://github.com/HansFeddersen/Election_Analysis/blob/main/Challenge/Resources/More/largest_county.png)
+The example for the math and reading scores are as follows:
+![This is an image](https://github.com/HansFeddersen/School_District_Analysis/blob/main/Resources/More/Math_by_grade.png)
+![This is an image](https://github.com/HansFeddersen/School_District_Analysis/blob/main/Resources/More/Reading_by_grade.png)
 
-**Breakdown of the number of votes and the percentage of the total votes each candidate recieved**
+To get the summary by grade, first it is necessary to create the series for each grade, group them by school name and then combine them into a DataFrame:
 
-The candidate with the most votes on her/his favor was Diana Degette with 272,892 votes (73.8%), followed by Charles Casper Stockham with 85,213 votes (23%) and finally Raymon Anthony Doane with 11,686 votes (3.1%).
+![This is an image](https://github.com/HansFeddersen/School_District_Analysis/blob/main/Resources/More/Math_by_grade_DF.png)
 
-The script to get this result is as follows:
 
-![This is an image](https://github.com/HansFeddersen/Election_Analysis/blob/main/Challenge/Resources/More/Votes_per_candidate.png)
+- **Scores by school spending**
 
-**Candidate that won the election, his/her vote count and percentage of the total votes**
+There is only change between the speding ranges of $586 to 630 and from $631 to $645:
+![This is an image](https://github.com/HansFeddersen/School_District_Analysis/blob/main/Resources/More/Scores_by_school_spending.png)
 
-The election was won by Diana Degette with 272,892 votes on her favor, which represents a 73,8% of the total votes. All the votes that she obtained on Denver were sufficient to win the election (due to difference of casted votes between Denver and the other two counties).
+To get this result, we have to establish the bins, categorize them, calculate the averages for each field and then create the Data Frame:
+![This is an image](https://github.com/HansFeddersen/School_District_Analysis/blob/main/Resources/More/Scores_by_school_spending_DF.png)
 
-The script to get this result is as follows:
+- **Scores by school size**
 
-![This is an image](https://github.com/HansFeddersen/Election_Analysis/blob/main/Challenge/Resources/More/Winning_candidate.png)
 
-## Election-Audit Summary
+- **Scores by school type**
+-
 
-- The script is written to work with any election data that follows the same format as the election_results.csv used (Ballot Id, County and Candidate). The script can be modified to print more results about these elections. Results such as, candidate outcome on each county or group of two counties.
-
-**Also, the script can be modified for other elections that have different data structures. Examples are as follows:**
-
-- Elections for city/state/country position (such as senator or president) where you can group the information by county, city and state. For this analysis the code should be modified to contain more dictionaries with all the counties that belong to one city and all the cities that belong to one state. Then one gets and group the results to have a very delicate analysis of the elections.
-
-- Elections such as the US presidential election where the candidate that wins the popular vote, does not necessarily wins the election (because each state represents a certain number of electors from the electoral college). One can introduce the data of how many electors does each state give and get the outcome of how many electoral votes each of the candidates received.
