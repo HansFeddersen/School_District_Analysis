@@ -52,7 +52,13 @@ Now, if one does not consider the 9th grade students, there is not much change o
 
 ![This is an image](https://github.com/HansFeddersen/School_District_Analysis/blob/main/Resources/More/Top_5_not_9th_thomas.png)
 
+To not consider the students of 9th grade for Thomas High School, we first have to obtain the number of students that are in 10th, 11th and 12th grade and then run back the analysis for that school but considering the new number of students instead of all the student. An example for the Math passing percentage is as follows:
 
+**Get the number of students for 10th, 11th and 12th grade for Thomas High:** grade_10_to_12_thomas = school_data_complete_df.loc[((school_data_complete_df["school_name"] == "Thomas High School") & (school_data_complete_df["grade"] != "9th")), "student_name"].count()
+
+Get the new percentage of students that passed math in Thomas High School:
+
+![This is an image](https://github.com/HansFeddersen/School_District_Analysis/blob/main/Resources/More/math_replace_9th.png)
 
 The county with the largest number of votes was Denver. There were 306,055 casted votes in Denver (82,8% of the total) and of those votes 239,282 were fo candidate Diana DeGette (72.8%), 57,188 were for candidate Charles Casper Stockham (18,7%) and 9,585 were for candidate Raymon Anthony Doane (3.1%).
 
