@@ -44,7 +44,15 @@ To get the school summary first it is necessary to define each column using the 
 
 ![This is an image](https://github.com/HansFeddersen/School_District_Analysis/blob/main/Resources/More/School_summary_DF.png)
 
-**County with the largest number of votes**
+**How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?**
+
+If one takes into consideration the grades of the 9 graders as "null", the replacing of grades has a huge effect on the Thomas High School Performance. It went from a 90.9% overall passing to only a 65%, which means that it went from being the second school overall to benig the worst school over all.
+
+Now, if one does not consider the 9th grade students, there is not much change on the perfomance of the school, it just went down 0.3% on the overall passing percent and maintaned the #2 place. The top 5 schools (according to overall performance) are as follows:
+
+![This is an image](https://github.com/HansFeddersen/School_District_Analysis/blob/main/Resources/More/Top_5_not_9th_thomas.png)
+
+
 
 The county with the largest number of votes was Denver. There were 306,055 casted votes in Denver (82,8% of the total) and of those votes 239,282 were fo candidate Diana DeGette (72.8%), 57,188 were for candidate Charles Casper Stockham (18,7%) and 9,585 were for candidate Raymon Anthony Doane (3.1%).
 
