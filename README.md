@@ -40,6 +40,10 @@ Then, the summary of schools after the change of grades:
 
 As we can see on both of the previous images, there is no change in 14 out of the 15 schools of the district, as the change of grades was made only on "Thomas High School" which really affected its performance.
 
+To get the school summary first it is necessary to define each column using the original DataFrame and then create a new DataFrame that includes the columns previously defined. The script is as follows:
+
+![This is an image](https://github.com/HansFeddersen/School_District_Analysis/blob/main/Resources/More/School_summary_DF.png)
+
 **County with the largest number of votes**
 
 The county with the largest number of votes was Denver. There were 306,055 casted votes in Denver (82,8% of the total) and of those votes 239,282 were fo candidate Diana DeGette (72.8%), 57,188 were for candidate Charles Casper Stockham (18,7%) and 9,585 were for candidate Raymon Anthony Doane (3.1%).
