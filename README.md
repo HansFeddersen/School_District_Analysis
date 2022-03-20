@@ -2,10 +2,11 @@
 Data Bootcamp Module 4: PyCitySchools with Pandas
 ## Overview of Project
 
-### The purpose of this project is to anlalyze the performance of a group of students and schools using Jupyter notebooks. At first, the results were obtained using the complete "students_complete.csv" and "schools_complete.csv" datasets, but after the first analysis some values of the student dataset were modified, as one grade of Thomas High School had invalid input (which changes the overall results of the analysis. By the end of this project, we are able to obtain and compare the following:
-* I. Summary of the disctrict (and how is affected with the change of grades)
+### The purpose of this project is to analyze the performance of a group of students and schools using Jupyter notebooks. At first, the results were obtained using the complete "students_complete.csv" and "schools_complete.csv" datasets, but after the first analysis some values of the student dataset were modified, as one grade of Thomas High School had invalid input (which changes the overall results of the analysis. By the end of this project, we are able to obtain and compare the following: 
+
+* I. Summary of the district (and how is affected with the change of grades)
 * II. Summary of each school (and how is affected with the change of grades)
-* III. How he change of grades affect the High Schools were the changes were made
+* III. How the change of grades affects the High Schools were the changes were made
 * IV. Effect of replacing grades in scores of each school (according to school spending, school size and school type)
 
 
@@ -16,7 +17,7 @@ Data Bootcamp Module 4: PyCitySchools with Pandas
 
 ## Results
 
-**Summary of the disctrict (and how is affected with the change of grades)**
+**Summary of the district (and how is affected with the change of grades)**
 
 The comparison of the district summary, before and after the change of grades is as follows:
 
@@ -30,7 +31,7 @@ To obtain the district summary, it is necessary to create a new Data frame, whic
 
 **Summary of each school (and how is affected with the change of grades)**
 
-First, the summary o schools before the change of grades:
+First, the summary of schools before the change of grades:
 
 ![This is an image](https://github.com/HansFeddersen/School_District_Analysis/blob/main/Resources/More/School_summary_before.png)
 
@@ -46,9 +47,9 @@ To get the school summary first it is necessary to define each column using the 
 
 **How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?**
 
-If one takes into consideration the grades of the 9 graders as "null", the replacing of grades has a huge effect on the Thomas High School Performance. It went from a 90.9% overall passing to only a 65%, which means that it went from being the second school overall to benig the worst school over all.
+If one takes into consideration the grades of the 9 graders as "null", the replacing of grades has a huge effect on the Thomas High School Performance. It went from a 90.9% overall passing to only a 65%, which means that it went from being the second school overall to being the worst school over all.
 
-Now, if one does not consider the 9th grade students, there is not much change on the perfomance of the school, it just went down 0.3% on the overall passing percent and maintaned the #2 place. The top 5 schools (according to overall performance) are as follows:
+Now, if one does not consider the 9th grade students, there is not much change on the performance of the school, it just went down 0.3% on the overall passing percent and maintained the #2 place. The top 5 schools (according to overall performance) are as follows:
 
 ![This is an image](https://github.com/HansFeddersen/School_District_Analysis/blob/main/Resources/More/Top_5_not_9th_thomas.png)
 
@@ -76,7 +77,7 @@ To get the summary by grade, first it is necessary to create the series for each
 
 - **Scores by school spending**
 
-There is only change between the speding ranges of $586 to 630 and from $631 to $645:
+As expected, there is only change between the spending ranges of $586 to 630 and from $631 to $645:
 ![This is an image](https://github.com/HansFeddersen/School_District_Analysis/blob/main/Resources/More/Scores_by_school_spending.png)
 
 To get this result, we have to establish the bins, categorize them, calculate the averages for each field and then create the Data Frame:
@@ -91,4 +92,6 @@ In this category, there is no notable change:
 There is also no notable change:
 ![This is an image](https://github.com/HansFeddersen/School_District_Analysis/blob/main/Resources/More/Scores_by_school_type.png)
 
+**Summary:** Summarize four changes in the updated school district analysis after reading and math scores for the ninth grade at Thomas High School have been replaced with NaNs.
 
+- The main changes are the reading and math score of Thomas High School, the passing percentages (math, reading and overall). Also, it affects directly the performance of the school compared to the others, since it went from being the second best High School (according to overall passing percentage) to being the number 7.
