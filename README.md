@@ -28,15 +28,17 @@ To obtain the district summary, it is necessary to create a new Data frame, whic
 
 ![This is an image](https://github.com/HansFeddersen/School_District_Analysis/blob/main/Resources/More/District_summary_DF.png)
 
-**Breakdown of the number of votes and the percentage of votes for each county in the precint**
+**Summary of each school (and how is affected with the change of grades)**
 
-Of the 369,711 casted votes, the county with the largest number of votes was Denver with 306,055 votes (82.8%), followed by Jefferson with 38,855 votes (10,5%) and in the last place Arapahoe with 24,801 votes (6.7%).
+First, the summary o schools before the change of grades:
 
-The script to get this result is as follows:
+![This is an image](https://github.com/HansFeddersen/School_District_Analysis/blob/main/Resources/More/School_summary_before.png)
 
-![This is an image](https://github.com/HansFeddersen/Election_Analysis/blob/main/Challenge/Resources/More/Votes_per_county.png)
-![This is an image](https://github.com/HansFeddersen/Election_Analysis/blob/main/Challenge/Resources/More/Percntage_per_county.png)
+Then, the summary of schools after the change of grades:
 
+![This is an image](https://github.com/HansFeddersen/School_District_Analysis/blob/main/Resources/More/School_summary_after.png)
+
+As we can see on both of the previous images, there is no change in 14 out of the 15 schools of the district, as the change of grades was made only on "Thomas High School" which really affected its performance.
 
 **County with the largest number of votes**
 
